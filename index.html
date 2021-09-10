@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Imported Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Link to style sheet -->
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+
+    <title>iPlanner</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo_container">
+            <a href="index.html"><h1>i<span>Planner</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">What's Next</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="../HTML/countDown.html">Countdowns</a></li>
+            <li><a href="../HTML/form.html">More</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script src="../JS/nav.js"></script>
+    
+    <div class="wrapper">
+    <div class="first">Day: </div>
+    <div id="dayCalculator" class="second" onload="evaluateDayOfWeek()"></div>
+    <script  src="../JS/period.js"></script>
+    </div>
+    
+    <div class="wrapper">
+    <div class="first">Time:  </div>
+    <div id="DigitalCLOCK" class="second" onload="showTime()"></div>
+    <script  src="../JS/clock.js"></script>
+    </div>
+
+    <div class="wrapper">
+    <div class="first">Period: </div>
+    <div id="periodCALCULATOR" class="second" onload="showTime()"></div>
+    <script  src="../JS/app.js"></script>
+    </div>
+    
+    
+
+    
+
+</body>
+</html>
