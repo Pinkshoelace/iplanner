@@ -1,0 +1,128 @@
+/* Start of Navigation Config */
+
+/* Colors */
+:root {
+    --black: #101010;
+  }
+  
+  /* Logo */
+  .logo_container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 200;
+  }
+  
+  .logo_container h1 span {
+    font-weight: 800;
+  }
+
+  .logo_container a {
+    text-decoration: none;
+  }
+  
+  /* header */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--black);
+    font-family: 'Montserrat';    
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+  
+  /* remove bullet points*/
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    font-family: 'Montserrat';
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font: 12px;
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+  
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        width: 40%;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+        opacity: 0;
+        tranform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  
+  .toggle .line2{
+    opacity: 0;
+  }
+  
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+  }
+  
+   /* End of Navigation Config */

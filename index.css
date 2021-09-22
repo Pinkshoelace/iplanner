@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+.wrapper {
+  _border: green 2px solid;
+  margin: 50px ;
+  padding: 10px ;
+}
+.first {
+  _border: red 2px solid;
+  width: 30%;
+  display: inline-block;
+  text-align: end;
+}
+.second {
+  _border: blue 2px solid;
+  width: 49%;
+  display: inline-block;
+}
+
+div h2 {
+  font-family: Montserrat;
+  font-size: large;
+}

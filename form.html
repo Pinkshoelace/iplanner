@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
     <!-- Link to style sheet -->
-    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="navigation.css">
+
+      <!--Import scripts-->
+      <script type="module" src="./app.js"></script>
 
     <title>Form</title>
   </head>
@@ -25,8 +29,8 @@
       <ul class="nav-links">
           <li><a href="#">What's Next</a></li>
           <li><a href="#">Tasks</a></li>
-          <li><a href="../HTML/countDown.html">Countdowns</a></li>
-          <li><a href="../HTML/form.html">More</a></li>
+          <li><a href="./index.html">Countdowns</a></li>
+          <li><a href="./form.html">Subjects</a></li>
       </ul>
       <div class="burger">
           <div class="line1"></div>
@@ -34,170 +38,136 @@
           <div class="line3"></div>
       </div>
   </nav>
-  <script src="../JS/nav.js"></script>
+
 
     <!-- Number of subjects form -->
+    
     <form>
-      <label for="subjectNum">Number of Subjects:</label>
+      <label class="drop_down" for="subjectNum">Number of Subjects:</label>
       <select id="subjectNum" name="subjectNum">
         <option value= 3 >3</option>
         <option value= 4 >4</option>
         <option value= 5 >5</option>
       </select>
-
       <br />
 
       <!-- Subjects Form -->
+      <script src="./browser-js/formControll.js"></script>
       <form name="form1">
-        <script src="../JS/checkBoxControl.js"></script>
-        <script src="../JS/saveInput.js"></script>
 
+        <label class="tick_box" for="subject_spanish"> Spanish: </label>
         <input
           type="checkbox"
-          id="subject_eng_lit"
+          id="subject_spanish"
           name="subject"
-          onclick="chkcontrol(0)"
-          value="English Lit"
-        />
-        <label for="subject_eng_lit"> English Lit</label> <br />
+          onclick="formControll(0)"
+        /> 
 
+        <label class="tick_box" for="subject_lengua"> Lengua: </label>
         <input
           type="checkbox"
-          id="subject_spa_lit"
+          id="subject_lengua"
           name="subject"
-          onclick="chkcontrol(1)"
-          value="Spanish Lit"
-        />
-        <label for="subject_spa_lit"> Spanish Lit</label> <br />
+          onclick="formControll(1)"
+        /> 
 
+        <label class="tick_box" for="subject_german"> German: </label>
         <input
           type="checkbox"
-          id="subject_spa"
+          id="subject_german"
           name="subject"
-          onclick="chkcontrol(2)"
-          value="Spanish"
-        />
-        <label for="subject_spa"> Spanish</label> <br />
+          onclick="formControll(2)"
+        /> 
 
+        <label class="tick_box" for="subject_french"> French: </label>
         <input
           type="checkbox"
-          id="subject_eng"
+          id="subject_french"
           name="subject"
-          onclick="chkcontrol(3)"
-          value="English"
-        />
-        <label for="subject_eng"> English</label> <br />
+          onclick="formControll(3)"
+        /> 
 
+        <label class="tick_box" for="subject_physics"> Physics: </label>
         <input
           type="checkbox"
-          id="subject_ger"
+          id="subject_physics"
           name="subject"
-          onclick="chkcontrol(4)"
-          value="German"
-        />
-        <label for="subject_ger"> German</label> <br />
+          onclick="formControll(4)"
+        /> 
 
+        <label class="tick_box" for="subject_english"> English: </label>
         <input
           type="checkbox"
-          id="subject_fre"
+          id="subject_english"
           name="subject"
-          onclick="chkcontrol(5)"
-          value="French"
-        />
-        <label for="subject_fre"> French</label> <br />
+          onclick="formControll(5)"
+        /> 
 
+        <label class="tick_box" for="subject_biology"> Biology: </label>
         <input
           type="checkbox"
-          id="subject_ict"
+          id="subject_biology"
           name="subject"
-          onclick="chkcontrol(6)"
-          value="ICT"
-        />
-        <label for="subject_ict"> ICT</label> <br />
+          onclick="formControll(6)"
+        /> 
 
+        <label class="tick_box" for="subject_it"> IT: </label>
         <input
           type="checkbox"
-          id="subject_bus"
+          id="subject_it"
           name="subject"
-          onclick="chkcontrol(7)"
-          value="Business"
-        />
-        <label for="subject_bus"> Business</label> <br />
+          onclick="formControll(7)"
+        /> 
 
+        <label class="tick_box" for="subject_geography"> Geography: </label>
+        <input
+          type="checkbox"
+          id="subject_geography"
+          name="subject"
+          onclick="formControll(8)"
+        /> 
+
+        <label class="tick_box" for="subject_chemistry"> Chemistry: </label>
+        <input
+          type="checkbox"
+          id="subject_chemistry"
+          name="subject"
+          onclick="formControll(9)"
+        /> 
+
+        <label class="tick_box" for="subject_business"> Business: </label>
+        <input
+          type="checkbox"
+          id="subject_business"
+          name="subject"
+          onclick="formControll(10)"
+        /> 
+
+        <label class="tick_box" for="subject_maths"> Maths: </label>
+        <input
+          type="checkbox"
+          id="subject_maths"
+          name="subject"
+          onclick="formControll(11)"
+        /> 
+
+        <label class="tick_box" for="subject_art"> Art: </label>
         <input
           type="checkbox"
           id="subject_art"
           name="subject"
-          onclick="chkcontrol(8)"
-          value="Art"
-        />
-        <label for="subject_art"> Art</label> <br />
+          onclick="formControll(12)"
+        /> 
 
+        <label class="tick_box" for="subject_fmaths"> Further Maths: </label>
         <input
           type="checkbox"
-          id="subject_geo"
+          id="subject_fmaths"
           name="subject"
-          onclick="chkcontrol(9)"
-          value="Geography"
-        />
-        <label for="subject_geo"> Geography</label> <br />
+          onclick="formControll(13)"
+        /> 
 
-        <input
-          type="checkbox"
-          id="subject_his"
-          name="subject"
-          onclick="chkcontrol(10)"
-          value="History"
-        />
-        <label for="subject_his"> History</label> <br />
-
-        <input
-          type="checkbox"
-          id="subject_math"
-          name="subject"
-          onclick="chkcontrol(11)"
-          value="Maths"
-        />
-
-        <label for="subject_math"> Maths</label> <br />
-
-        <input
-          type="checkbox"
-          id="subject_fur_math"
-          name="subject"
-          onclick="chkcontrol(12)"
-          value="Further Math"
-        />
-
-        <label for="subject_fur_math"> Further Math</label> <br />
-
-        <input
-          type="checkbox"
-          id="subject_chem"
-          name="subject"
-          onclick="chkcontrol(13)"
-          value="Chemistry"
-        />
-        <label for="subject_chem"> Chemistry</label> <br />
-
-        <input
-          type="checkbox"
-          id="subject_phy"
-          name="subject"
-          onclick="chkcontrol(14)"
-          value="Physics"
-        />
-        <label for="subject_phy"> Physics</label> <br />
-
-        <input
-          type="checkbox"
-          id="subject_bio"
-          name="subject"
-          onclick="chkcontrol(15)"
-          value="Biology"
-        />
-        <label for="subject_bio"> Biology</label> <br />
-
+        <script src="./browser-js/formInput.js"></script>
         <div>
           <button id="submit_btn">Click to Add</button>
         </div>

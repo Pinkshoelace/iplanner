@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+.drop_down {
+    _border: green 2px solid;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: large;
+}
+
+.tick_box {
+    _border: red 2px solid;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: large;
+    text-align: end;
+    margin: 5px;
+    width: 25%;
+    display: inline-block;
+}
+
+input[type='checkbox'] {
+    display: inline-block;
+    transform: scale(1.3);
+    _border: blue 2px solid;
+}
